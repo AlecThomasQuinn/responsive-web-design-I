@@ -1,3 +1,237 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/*My code begins*/
+
+body{
+	width: 876px;
+	margin: auto;
+
+}
+
+@media (max-width: 800px){
+	body{
+	width: 800px;
+	margin: 0 20px;
+	}
+
+}
+
+/*body end ------*/
+
+.nav-wrapper{
+	display: flex;
+	flex-direction: row;
+}
+
+.nav-wrapper nav{
+	display: inline-flex;
+	justify-content: space-between;
+	height: auto;
+	width: 600px;
+	padding: 20px 0 20px 0;
+}
+
+.nav-wrapper nav a{
+	margin: 20px;
+	text-decoration: none;
+	color: #ACBDD4;
+	font-size: 16px;
+	font-weight: semi-bold;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+#nav-logo{
+	display: inline-block;
+	align-self: center;
+	height: 36px;
+	margin-left: auto;
+}
+
+@media (max-width: 800px){
+	.nav-wrapper{
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	.nav-wrapper nav{
+		order: 2;
+		width: auto;
+	}
+
+	#nav-logo{
+		order: 1;
+		margin: 20px 0 0 0 ;
+	}
+}
+
+/*top navigation end ------*/
+
+.top-banner-div{
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding: 50px 0 50px 0;
+
+}
+
+.left-banner-div{
+	display: flex;
+	flex-direction: column;
+	width: 379px;
+	height: 379px;
+}
+
+.left-banner-font{
+	font-family: 'Bangers', cursive;
+	font-size: 77px;
+	margin: auto;
+	text-align: center;
+}
+
+.left-banner-cta{
+	font-family: 'Titillium Web', sans-serif;
+	width: 150px;
+	font-size: 18px;
+	padding: 5px;
+	margin: 0 auto auto auto;
+	border: 1px solid black;
+	text-align: center;
+}
+
+@media (max-width: 800px){
+	.top-banner-div img{
+		display: none;
+	}
+}
+
+/*top banner end ------*/
+
+hr{
+	border: solid black .5px;
+	margin: 20px 0;
+}
+
+article{
+	padding: 40px 0;
+}
+
+article h3{
+	font-size: 18px;
+}
+
+.main-content{
+}
+
+.top-main{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.top-main article{
+    margin: 0 2% 20px;
+}
+
+.mid-main{
+	display: flex;
+	justify-content: center;
+}
+
+.bottom-main{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.bottom-main article{
+    margin: 0 2% 20px;
+}
+
+/*img {
+  display: block;
+  width: 100%;
+  height: auto;
+}*/
+
+@media (max-width: 800px){
+	.mid-main img{
+		display: block;
+  		width: 100%;
+  		height: auto;
+  	}
+}
+
+/*main content end ------*/
+
+.copyright{
+	text-align: center;
+	padding: 50px 0;
+}/* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
