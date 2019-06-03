@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-/*My code begins*/
+/*body ------*/
 
 body{
 	width: 876px;
@@ -73,15 +73,27 @@ body{
 
 }
 
+/*body tablet ------*/
+
 @media (max-width: 800px){
 	body{
-	width: 800px;
-	margin: 0 20px;
+		width: 800px;
+		margin: 0 20px;
 	}
 
 }
 
-/*body end ------*/
+/*body phone ------*/
+
+@media (max-width: 500px){
+	body{
+		width: 500px;
+		margin: 20px 0;
+	}
+
+}
+
+/*top navigation ------*/
 
 .nav-wrapper{
 	display: flex;
@@ -112,10 +124,13 @@ body{
 	margin-left: auto;
 }
 
+/*top navigation tablet ------*/
+
 @media (max-width: 800px){
 	.nav-wrapper{
+		justify-content: center;
 		flex-direction: column;
-		flex-wrap: wrap;
+		flex-wrap: reverse-wrap;
 	}
 
 	.nav-wrapper nav{
@@ -129,7 +144,28 @@ body{
 	}
 }
 
-/*top navigation end ------*/
+/*top navigation phone ------*/
+
+@media (max-width: 500px){
+	.nav-wrapper nav{
+	display: flex;
+	flex-direction: column;
+	}
+
+	.nav-wrapper nav a{
+		font-size: 22px;
+		border-bottom: 1px solid black;
+		text-align: center;
+		margin: 0;
+		padding: 20px;
+	}
+
+	.nav-wrapper nav a:first-of-type{
+		border-top: 1px solid black;
+	}
+}
+
+/*top banner ------*/
 
 .top-banner-div{
 	display: flex;
@@ -164,13 +200,16 @@ body{
 	text-align: center;
 }
 
+/*top banner tablet ------*/
+/*top banner phone ------*/
+
 @media (max-width: 800px){
 	.top-banner-div img{
 		display: none;
 	}
 }
 
-/*top banner end ------*/
+/*main-content ------*/
 
 hr{
 	border: solid black .5px;
@@ -183,9 +222,6 @@ article{
 
 article h3{
 	font-size: 18px;
-}
-
-.main-content{
 }
 
 .top-main{
@@ -213,11 +249,8 @@ article h3{
     margin: 0 2% 20px;
 }
 
-/*img {
-  display: block;
-  width: 100%;
-  height: auto;
-}*/
+
+/*main-content tablet------*/
 
 @media (max-width: 800px){
 	.mid-main img{
@@ -227,11 +260,43 @@ article h3{
   	}
 }
 
-/*main content end ------*/
+/*main-content phone------*/
+
+@media (max-width: 500px){
+	.main-content article{
+		padding: 20px;
+		margin: 0;
+	}
+
+	.mid-main {
+		width: auto;
+		margin: 0 20px;
+  	
+  	}
+
+	.top-main{
+		flex-direction: column;
+	}
+
+	.bottom-main{
+		flex-direction: column;
+	}
+}
+
+/*footer ------*/
 
 .copyright{
 	text-align: center;
 	padding: 50px 0;
-}/* Use your own code or past solution for Great Idea Web Page CSS here! */
+}
 
+/*footer tablet------*/
+/*footer phone------*/
+@media (max-width: 500px){
+	footer article{
+		margin: 0 20px;
+	}
+}
+
+/*footer end------*/
 
